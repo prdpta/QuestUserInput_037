@@ -58,3 +58,11 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
+        // LatarBelakang PNG
+        Image(
+            painter = painterResource(id = R.drawable.latarbelakang),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop // biar gambar menyesuaikan layar
+        )
+
