@@ -185,3 +185,17 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(16.dp))
 
+            // Tombol Submit
+            Button(
+                onClick = { showDialog = true },
+                enabled = setuju,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(30.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1976D2))
+            ) {
+                Text("Submit", color = Color.White)
+            }
+        }
+
