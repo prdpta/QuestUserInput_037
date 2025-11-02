@@ -50,3 +50,5 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
     var setuju by remember { mutableStateOf(false) }
     var showDialog by remember { mutableStateOf(false) }
 
+    val genderList = listOf("Laki-laki", "Perempuan")
+
