@@ -94,3 +94,14 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Input Kota
+            OutlinedTextField(
+                value = kota,
+                onValueChange = { kota = it },
+                label = { Text("Kota Asal") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(Modifier.height(8.dp))
+
