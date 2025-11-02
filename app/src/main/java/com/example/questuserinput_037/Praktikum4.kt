@@ -105,3 +105,14 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Input Tanggal Lahir
+            OutlinedTextField(
+                value = tanggal,
+                onValueChange = { tanggal = it },
+                label = { Text("Tanggal Lahir (MM/DD/YY)") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(Modifier.height(8.dp))
+
