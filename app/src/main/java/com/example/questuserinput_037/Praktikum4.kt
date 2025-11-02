@@ -66,3 +66,20 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop // biar gambar menyesuaikan layar
         )
 
+        // Isi Form
+        Column(
+            modifier = Modifier
+                .padding(20.dp)
+                .clip(RoundedCornerShape(30.dp))
+                .background(Color.White.copy(alpha = 0.9f))
+                .padding(20.dp)
+                .verticalScroll(rememberScrollState()),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Form Registrasi",
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(bottom = 16.dp)
+            )
+
