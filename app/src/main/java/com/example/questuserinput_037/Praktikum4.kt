@@ -116,3 +116,26 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(8.dp))
 
+            // Input RT / RW
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                OutlinedTextField(
+                    value = rt,
+                    onValueChange = { rt = it },
+                    label = { Text("RT") },
+                    singleLine = true,
+                    modifier = Modifier.weight(1f)
+                )
+                OutlinedTextField(
+                    value = rw,
+                    onValueChange = { rw = it },
+                    label = { Text("RW") },
+                    singleLine = true,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+
+            Spacer(Modifier.height(8.dp))
+
