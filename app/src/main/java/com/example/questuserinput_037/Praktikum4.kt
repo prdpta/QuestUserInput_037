@@ -52,3 +52,9 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
 
     val genderList = listOf("Laki-laki", "Perempuan")
 
+    // Tampilan Utama
+    Box(
+        modifier = Modifier
+            .fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
