@@ -83,3 +83,14 @@ fun PraktikumEmpat(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(bottom = 16.dp)
             )
 
+            // Input Nama
+            OutlinedTextField(
+                value = nama,
+                onValueChange = { nama = it },
+                label = { Text("Nama Lengkap") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(Modifier.height(8.dp))
+
